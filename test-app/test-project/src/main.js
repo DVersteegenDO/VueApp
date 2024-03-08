@@ -1,6 +1,9 @@
-import './assets/main.css'
-
 import { createApp } from 'vue'
 import App from './App.vue'
 
-createApp(App).mount('#app')
+import KadasterItem from './components/KadasterComponent.vue'
+
+const app = createApp(App)
+app.component('kadaster-item', KadasterItem)
+
+app.mount('#app')
