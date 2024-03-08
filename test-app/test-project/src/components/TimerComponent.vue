@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <h1>Timer</h1>
-        <p>Counter: {{ counter }}</p>
+        <p>Dots Counter: {{ dotsCounter }}</p>
         <button @click="countDownTimer">Start Timer</button>
         <p id="dots">{{ dots }}</p>
     </div>

@@ -1,15 +1,22 @@
 <template>
   <div id="topBar">
-    <h1>Hello</h1>
+    <h1>{{greeting}}</h1>
   </div>
 
-  <div>
-    <!-- <artist-item></artist-item> -->
+  <div id="components_container">
+    <artist-item></artist-item>
     <timer-item></timer-item>
   </div>
 </template>
 
 <script>
+export default {
+  data() {
+    return {
+      greeting: 'Hello'
+    }
+  }
+}
 </script>
 
 <style>
@@ -29,17 +36,22 @@ body {
   background-color: rgb(170, 170, 170);
 }
 
+#components_container {
+  display: flex;
+  flex-direction: row;
+}
+
 .container {
-    border: solid 3px black;
-    width: 540px;
-    margin: 10px;
-    padding: 10px;
+  border: solid 3px black;
+  width: 540px;
+  margin: 10px;
+  padding: 10px;
 }
 
 button {
   border: solid 3px black;
-    padding: 3px 5px;
-    font-size: 14px;
-    font-weight: bolder;
+  padding: 3px 5px;
+  font-size: 14px;
+  font-weight: bolder;
 }
 </style>

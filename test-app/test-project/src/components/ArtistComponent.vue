@@ -53,7 +53,7 @@ import axios from 'axios'
 export default {
     data() {
         return {
-            id: 0,
+            id: '',
             name: '',
             followers: '',
             country: '',
@@ -67,7 +67,7 @@ export default {
     computed: {
         requestUrl: {
             get() {
-                return `${this.standardUrl}${this.id}`;
+                return `${this.standardUrl}${this.id}`
             }
         }
     },
