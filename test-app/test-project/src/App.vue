@@ -4,11 +4,13 @@
   </div>
 
   <div>
-    <kadaster-item></kadaster-item>
+    <!-- <artist-item></artist-item> -->
+    <timer-item></timer-item>
   </div>
 </template>
 
-<script></script>
+<script>
+</script>
 
 <style>
 * {
@@ -25,5 +27,19 @@
 
 body {
   background-color: rgb(170, 170, 170);
+}
+
+.container {
+    border: solid 3px black;
+    width: 540px;
+    margin: 10px;
+    padding: 10px;
+}
+
+button {
+  border: solid 3px black;
+    padding: 3px 5px;
+    font-size: 14px;
+    font-weight: bolder;
 }
 </style>
