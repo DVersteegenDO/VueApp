@@ -68,7 +68,8 @@ export default {
         requestUrl: {
             get() {
                 return `${this.standardUrl}${this.id}`
-            }
+            },
+            set() { }
         }
     },
     methods: {
@@ -116,7 +117,6 @@ export default {
 </script>
 
 <style scoped>
-
 #artist_container {
     display: flex;
 }
